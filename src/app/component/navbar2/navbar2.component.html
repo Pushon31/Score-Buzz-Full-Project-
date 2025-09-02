@@ -1,0 +1,36 @@
+<nav class="custom-nav">
+  <a routerLink="live">Live Matches</a>
+  <a routerLink="upcoming">Upcoming Matches</a>
+  <a routerLink="finished">Finished Matches</a>
+</nav>
+
+<style>
+  .custom-nav {
+    display: flex;
+    justify-content: center; /* লিঙ্কগুলো center-align */
+    gap: 50px; /* লিঙ্কের মধ্যে সমান দূরত্ব */
+    background-color: black;
+    padding: 10px 0;
+  }
+
+  .custom-nav a {
+    color: #ffc107; /* warning-like yellow */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .custom-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive ছোট স্ক্রিনের জন্য */
+  @media (max-width: 576px) {
+    .custom-nav {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+</style>
+

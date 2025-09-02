@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand text-warning fw-bold" href="#">
+      <img src="https://i.pinimg.com/236x/64/a9/2e/64a92efe1f089aea286ddf93652e20ef.jpg" 
+           alt="ScoreBuzz Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
+      ScoreBuzz
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler border-warning ms-auto" type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ScoreBuzz Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex mb-3">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link text-warning" routerLink="profile">My Profile</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" routerLink="setting">Settings</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" routerLink="more">More</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
