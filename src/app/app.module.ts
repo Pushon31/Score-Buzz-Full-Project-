@@ -23,6 +23,8 @@ import { PrivacyPolicyComponent } from './component/privacy-policy/privacy-polic
 import { ContactsComponent } from './component/contacts/contacts.component';
 import { TermsConditionComponent } from './component/terms-condition/terms-condition.component';
 import { SponsorsComponent } from './component/sponsors/sponsors.component';
+import { LoginComponent } from './component/login/login.component';
+import { CrrateAccountComponent } from './component/crrate-account/crrate-account.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { SponsorsComponent } from './component/sponsors/sponsors.component';
     PrivacyPolicyComponent,
     ContactsComponent,
     TermsConditionComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    LoginComponent,
+    CrrateAccountComponent
   ],
   imports: [
     BrowserModule,
