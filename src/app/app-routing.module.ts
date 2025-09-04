@@ -16,9 +16,14 @@ import { PrivacyPolicyComponent } from './component/privacy-policy/privacy-polic
 import { TermsConditionComponent } from './component/terms-condition/terms-condition.component';
 import { SponsorsComponent } from './component/sponsors/sponsors.component';
 import { ContactsComponent } from './component/contacts/contacts.component';
+import { ErrorPageComponent } from './component/error-page/error-page.component';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  {path:'profile',component:ProfileComponent},
+ { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] }
+,
   {path:'setting',component:SettingComponent},
   {path:'more',component:MoreComponent},
   {path:'home',component:HomeComponent},
@@ -34,6 +39,9 @@ const routes: Routes = [
   {path:'terms',component:TermsConditionComponent},
   {path:'sponsor',component:SponsorsComponent},
   {path:'contact',component:ContactsComponent},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'**',component:ErrorPageComponent},
 ];
 
 @NgModule({

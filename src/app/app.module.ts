@@ -23,6 +23,10 @@ import { PrivacyPolicyComponent } from './component/privacy-policy/privacy-polic
 import { ContactsComponent } from './component/contacts/contacts.component';
 import { TermsConditionComponent } from './component/terms-condition/terms-condition.component';
 import { SponsorsComponent } from './component/sponsors/sponsors.component';
+import { ErrorPageComponent } from './component/error-page/error-page.component';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,11 +50,15 @@ import { SponsorsComponent } from './component/sponsors/sponsors.component';
     PrivacyPolicyComponent,
     ContactsComponent,
     TermsConditionComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    ErrorPageComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
