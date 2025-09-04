@@ -23,10 +23,15 @@ import { PrivacyPolicyComponent } from './component/privacy-policy/privacy-polic
 import { ContactsComponent } from './component/contacts/contacts.component';
 import { TermsConditionComponent } from './component/terms-condition/terms-condition.component';
 import { SponsorsComponent } from './component/sponsors/sponsors.component';
+<<<<<<< HEAD
 import { ErrorPageComponent } from './component/error-page/error-page.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { FormsModule } from '@angular/forms';
+=======
+import { LoginComponent } from './component/login/login.component';
+import { CrrateAccountComponent } from './component/crrate-account/crrate-account.component';
+>>>>>>> f29ed219d43a14a82d271b3802d843c35485e92d
 
 @NgModule({
   declarations: [
@@ -51,9 +56,14 @@ import { FormsModule } from '@angular/forms';
     ContactsComponent,
     TermsConditionComponent,
     SponsorsComponent,
+<<<<<<< HEAD
     ErrorPageComponent,
     LoginComponent,
     RegisterComponent
+=======
+    LoginComponent,
+    CrrateAccountComponent
+>>>>>>> f29ed219d43a14a82d271b3802d843c35485e92d
   ],
   imports: [
     BrowserModule,
