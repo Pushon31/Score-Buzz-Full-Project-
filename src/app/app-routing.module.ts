@@ -22,6 +22,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
+   {path:'',component:HomeComponent},
  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] }
 ,
   {path:'setting',component:SettingComponent},

@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
-=======
->>>>>>> f29ed219d43a14a82d271b3802d843c35485e92d
 
 @Component({
   selector: 'app-login',
@@ -13,7 +10,6 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
 
-<<<<<<< HEAD
   email = "";
   password = "";
   errorMessage="";
@@ -35,6 +31,4 @@ export class LoginComponent {
 }
     
 
-=======
->>>>>>> f29ed219d43a14a82d271b3802d843c35485e92d
 }

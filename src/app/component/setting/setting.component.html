@@ -1,1 +1,47 @@
-<p>setting works!</p>
+<div class="container-fluid bg-black min-vh-100 d-flex align-items-center">
+  <div class="row w-100">
+
+    <!-- Left Image -->
+    <div class="col-lg-3 d-none d-lg-flex justify-content-center">
+      <img src="https://i.pinimg.com/236x/11/13/11/111311c76e6078fbf0c6a511c5f8c2b7.jpg" 
+           alt="Left Sport" class="img-fluid" style="max-height:80vh; opacity:0.7;">
+    </div>
+
+    <!-- Center Content -->
+    <div class="col-lg-6 text-center text-light">
+      <h1 class="display-4 fw-bold mb-3">⚙ Settings</h1>
+      <p class="lead mb-4">Manage your account preferences and profile details</p>
+
+      <div class="card bg-dark text-light shadow-lg p-4" style="border-radius: 15px;">
+        
+        <!-- Change Password -->
+        <button class="btn btn-warning w-100 mb-3" (click)="changePassword()">
+          <i class="bi bi-lock-fill"></i> Change Password
+        </button>
+
+        <!-- Notification Preferences -->
+        <button class="btn btn-outline-warning w-100 mb-3" (click)="notificationPreferences()">
+          <i class="bi bi-bell-fill"></i> Notification Preferences
+        </button>
+
+        <!-- Privacy Settings -->
+        <button class="btn btn-outline-warning w-100 mb-3" (click)="privacySettings()">
+          <i class="bi bi-shield-lock-fill"></i> Privacy Settings
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="btn btn-outline-warning w-100" (click)="themeToggle()">
+          <i class="bi bi-moon-stars-fill"></i> Theme & Display
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-lg-3 d-none d-lg-flex justify-content-center">
+      <img src="https://i.pinimg.com/236x/11/13/11/111311c76e6078fbf0c6a511c5f8c2b7.jpg" 
+           alt="Right Sport" class="img-fluid" style="max-height:80vh; opacity:0.7;">
+    </div>
+
+  </div>
+</div>

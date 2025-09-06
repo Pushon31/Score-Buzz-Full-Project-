@@ -1,1 +1,21 @@
-<p>live-matches works!</p>
+<div class="container my-4">
+  <h2 class="text-warning text-center mb-4">Live Matches</h2>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading" class="text-center text-light">
+    Loading...
+  </div>
+
+  <!-- Matches list -->
+  <div *ngFor="let match of matches" class="card mb-3 p-3 bg-dark text-light">
+    <h5>{{ match.name }}</h5>
+    <p>Status: {{ match.status }}</p>
+    <p *ngIf="match.venue">Venue: {{ match.venue }}</p>
+    <p *ngIf="match.date">Date: {{ match.date }}</p>
+  </div>
+
+  <!-- No matches -->
+  <div *ngIf="!loading && matches.length === 0" class="text-center text-light">
+    No live matches currently.
+  </div>
+</div>

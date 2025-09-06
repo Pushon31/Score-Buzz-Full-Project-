@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://cricket-api-free-data.p.rapidapi.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

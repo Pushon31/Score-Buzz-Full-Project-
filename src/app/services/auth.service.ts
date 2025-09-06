@@ -58,6 +58,13 @@ deleteUser(email: string) {
   this.users = this.users.filter(u => u.email !== email);
 }
 
+
+// AuthService এর মধ্যে
+getCurrentUser() {
+  const user = localStorage.getItem('authUser');
+  return user ? JSON.parse(user) : null;
+}
+
 }
   
 

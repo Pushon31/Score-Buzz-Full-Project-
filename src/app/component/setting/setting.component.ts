@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class SettingComponent {
 
+  changePassword() {
+    console.log("Change Password clicked!");
+ 
+  }
+
+  notificationPreferences() {
+    console.log("Notification Preferences clicked!");
+  
+  }
+
+  privacySettings() {
+    console.log("Privacy Settings clicked!");
+    
+  }
+
+  themeToggle() {
+    console.log("Theme Toggle clicked!");
+    
+  }
 }
